@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@tailwind screens;
+@tailwind typography;
+@tailwind forms;
+@tailwind aspect-ratio;
+@tailwind line-clamp;
+@tailwind typography;
+@tailwind container;
+@tailwind scrollbar;
+@tailwind dark;
+@tailwind dark-scrollbar;
+
+@theme {
+  --color-red-500: #ef4444;
+  --color-primary: #ff7f00;
+  --color-danger: #ef4444;
+  --color-blue-500: #3b82f6;
+  --color-green-500: #10b981;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  /* Agrega más colores según sea necesario */
+}
+
+
+:root {
+  font-family: Montserrat;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0px !important;
+
+  max-width: 100%;
+}
+
+.textos-28 {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.textos-20{
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.textos-18 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.textos-14{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.textos-14-semibold{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.textos-12-semibold{
+  /* SM/Medium */
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+}
+
+.inter-40{
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 850;
+  line-height: 116%; /* 46.4px */
+  text-transform: capitalize;
+}
+
+.inter-32-regular{
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.inter-32 {
+  font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 850;
+line-height: 116%; /* 37.12px */
+}
+
+.inter-24{
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
+
+.inter-20{
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+
+.inter-18{
+  font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 850;
+line-height: normal;
+letter-spacing: -0.54px;
+}
+
+.inter-16 {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 850;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.inter-14 {
+  font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 140.592%; /* 19.683px */
+letter-spacing: -0.42px;
+}
+
+.inter-12{
+  font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  border: 0px solid;
+  background-color: transparent;
+}
+/*End::Global*/
+
