@@ -1,0 +1,148 @@
+/*Sidebar*/
+.sidebar {
+  width: 20%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  padding-left: 1.6%;
+  padding-top: 2%;
+  transition: width 0.5s linear;
+}
+
+.sidebar-hidden {
+  width: 9%;
+  padding-left: 2%;
+}
+
+
+.sidebar-hidden .datos-perfil-sidebar,
+.sidebar-hidden .content-sidebar > a > p,
+.sidebar-hidden div > button > p {
+  display: none;
+}
+
+.sidebar-hidden .content-sidebar > a > img,
+.sidebar-hidden div > button > img {
+  width: 25px;
+}
+
+.sidebar-hidden .content-sidebar > a {
+  height: 6%;
+}
+
+.sidebar-hidden .comprimir-button {
+  left: 5%;
+  transform: rotate(180deg);
+}
+
+.sidebar-hidden .logo-sidebar {
+  width: 25%;
+  height: 6%;
+}
+
+.comprimir-button {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  z-index: 3;
+}
+
+.logo-sidebar{
+  width: 50%;
+  height: 7%;
+}
+
+.div-perfil-sidebar{
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 4%;
+}
+
+.foto-perfil-sidebar{
+  width: 42px;
+  height: 42px;
+  padding: 1%;
+  border-radius: 60px;
+  border: 2px solid #5A5DA6;
+  object-fit: cover;
+  object-position: center;
+}
+
+.datos-perfil-sidebar{
+  height: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.content-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 74.9%;
+  height: 46vh;
+  gap: 1%;
+  justify-content: center;
+}
+
+.content-sidebar > a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 9.5%;
+  gap: 4%;
+}
+
+.selected-dashboard {
+  background-color: #FF7F00;
+  border-radius: 10px 0px 0px 10px;
+  margin-left: -9px;
+  padding-left: 18px;
+  color: #fff;
+}
+
+.selected-dashboard > img {
+  margin-left: -10px;
+}
+
+.unselected-dashboard {
+  background-color: #fff;
+  border-radius: 10px 0px 0px 10px;
+  margin-left: -20px;
+  padding-left: 20px;
+  color: #3A3A3A;
+}
+
+.selected-img{display: none;}
+
+.selected-dashboard .selected-img{display: block;}
+
+.selected-dashboard .noselected-img{display: none;}
+
+.sidebar-hidden .content-sidebar > a > h4,
+.sidebar-hidden div > button > h4 {
+  display: none;
+}
+
+.sidebar-hidden h4 {
+  display: none;
+}
+
+.sidebar-hidden .selected-dashboard {
+  margin-left: -32%;
+  width: 65%;
+}
+
+.sidebar-hidden .content-sidebar {
+  gap: 18px;
+  align-items: center;
+}
+
+/*End::sidebar*/

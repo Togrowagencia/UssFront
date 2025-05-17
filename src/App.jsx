@@ -5,7 +5,8 @@ import { disconnectSocket } from '@/settings/socket.js';
 import useAuth from '@/lib/hooks/useAuth';
 /*Routes*/
 import { Login } from './pages/login';
-
+import Usuarios  from './pages/Usuarios';
+import Dashboard from './pages/Dashboard';
 /*End::Routes*/
 
 /*Routes Protection*/
@@ -41,6 +42,9 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Login />} />
+
+        <Route path="/usuarios" element={<Usuarios />} />
+        <Route path="/dashboard" element={<Dashboard />} />
 
         /**404 */
         <Route path="*" element={<Navigate to="/" />} />
