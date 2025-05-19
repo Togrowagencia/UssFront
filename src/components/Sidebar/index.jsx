@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Styles/Styles.css";
@@ -26,7 +26,7 @@ export const Sidebar = () => {
         return location.pathname === path
           ? "selected-dashboard"
           : "unselected-dashboard";
-      case "/estudiosseguridad":
+      case "/estudios-seguridad":
         return location.pathname === path
           ? "selected-dashboard"
           : "unselected-dashboard";
@@ -60,11 +60,6 @@ export const Sidebar = () => {
     setIsCollapsed(newState);
     localStorage.setItem("sidebarCollapsed", newState);
   };
-
-  useEffect(() => {
-    const savedState = localStorage.getItem("sidebarCollapsed");
-    setIsCollapsed(savedState === "true");
-  }, []);
 
   return (
     <div className={`sidebar ${isCollapsed ? "sidebar-hidden" : ""}`}>
@@ -177,7 +172,7 @@ export const Sidebar = () => {
         src={`${
           isCollapsed ? "/images/logo-solo.png" : "/images/logo-sidebar.png"
         }`}
-        className={`logo-sidebar`}
+        className={`logo-sidebar mt-[9%]`}
       />
 
       <div className="w-full items-start justify-start flex h-[10%]">
@@ -190,103 +185,61 @@ export const Sidebar = () => {
       <div className="content-sidebar">
         <Link to="/dashboard" className={getSelectedLink("/dashboard")}>
           <img src="/svg/sidebar/dashboard.svg" className="noselected-img" />
-          <img
-            src="/svg/sidebar/dashboard-selected.svg"
-            className="selected-img"
-          />
+          <img src="/svg/sidebar/dashboard-selected.svg" className="selected-img" />
           <h4>Dashboard</h4>
         </Link>
 
         <Link to="/usuarios" className={getSelectedLink("/usuarios")}>
           <img src="/svg/sidebar/usuarios.svg" className="noselected-img" />
-          <img
-            src="/svg/sidebar/usuarios-selected.svg"
-            className="selected-img"
-          />
+          <img src="/svg/sidebar/usuarios-selected.svg" className="selected-img" />
           <h4>Usuarios</h4>
         </Link>
 
         <Link to="/empresas" className={getSelectedLink("/empresas")}>
           <img src="/svg/sidebar/empresas.svg" className="noselected-img" />
-          <img
-            src="/svg/sidebar/empresas-selected.svg"
-            className="selected-img"
-          />
+          <img src="/svg/sidebar/empresas-selected.svg" className="selected-img" />
           <h4>Empresas</h4>
         </Link>
 
-        <Link
-          to="/estudiosseguridad"
-          className={getSelectedLink("/estudiosseguridad")}
-        >
-          <img
-            src="/svg/sidebar/estudiosseguridad.svg"
-            className="noselected-img"
-          />
-          <img
-            src="/svg/sidebar/estudiosseguridad-selected.svg"
-            className="selected-img"
-          />
+        <Link to="/estudios-seguridad" className={getSelectedLink("/estudios-seguridad")}>
+          <img src="/svg/sidebar/estudiosseguridad.svg" className="noselected-img" />
+          <img src="/svg/sidebar/estudiosseguridad-selected.svg" className="selected-img" />
           <h4>Estudios de Seguridad</h4>
         </Link>
 
-        <Link
-          to="/gestion-adversos"
-          className={getSelectedLink("/gestion-adversos")}
-        >
+        <Link to="/gestion-adversos" className={getSelectedLink("/gestion-adversos")}>
           <img src="/svg/sidebar/gestion.svg" className="noselected-img" />
-          <img
-            src="/svg/sidebar/gestion-selected.svg"
-            className="selected-img"
-          />
+          <img src="/svg/sidebar/gestion-selected.svg" className="selected-img" />
           <h4>Gestión de Adversos</h4>
         </Link>
 
-        <Link
-          to="/gestion-poligrafia"
-          className={getSelectedLink("/gestion-poligrafia")}
-        >
+        <Link to="/gestion-poligrafia" className={getSelectedLink("/gestion-poligrafia")}>
           <img src="/svg/sidebar/gestion.svg" className="noselected-img" />
-          <img
-            src="/svg/sidebar/gestion-selected.svg"
-            className="selected-img"
-          />
+          <img src="/svg/sidebar/gestion-selected.svg" className="selected-img" />
           <h4>Gestión de poligrafía</h4>
         </Link>
 
-        <Link
-          to="/gestion-visitas"
-          className={getSelectedLink("/gestion-visitas")}
-        >
-          <img
-            src="/svg/sidebar/gestionvistas.svg"
-            className="noselected-img"
-          />
-          <img
-            src="/svg/sidebar/gestionvisitas-selected.svg"
-            className="selected-img"
-          />
+        <Link to="/gestion-visitas" className={getSelectedLink("/gestion-visitas")}>
+          <img src="/svg/sidebar/gestionvistas.svg" className="noselected-img" />
+          <img src="/svg/sidebar/gestionvisitas-selected.svg" className="selected-img" />
           <h4>Gestión de visitas</h4>
         </Link>
 
         <Link to="/seleccion" className={getSelectedLink("/seleccion")}>
           <img src="/svg/sidebar/seleccion.svg" className="noselected-img" />
-          <img
-            src="/svg/sidebar/seleccion-selected.svg"
-            className="selected-img"
-          />
+          <img src="/svg/sidebar/seleccion-selected.svg" className="selected-img" />
           <h4>Selección</h4>
         </Link>
       </div>
 
       <div className="flex flex-col w-full h-[19vh] gap-[2%] justify-end items-center">
         <Link to="/" className="flex items-center justify-start w-full gap-[2.5%]">
-          <img src="/svg/sidebar/cerrar.svg" />
+          <img src="/svg/sidebar/cerrar.svg" className={`w-[${isCollapsed ? "9%" : "1.7%"}]`} />
           <h4 className="rojo">Cerrar Sesión</h4>
         </Link>
 
         <div className="flex justify-start items-center w-full">
-          <img src="/images/logo-togrow.png" alt="" />
+          <img src="/images/logo-togrow.png" alt="" className={`w-[${isCollapsed ? "11%" : "7.2%"}]`} />
           <h4 className="text-[#999]">Develop by ToGrow</h4>
         </div>
       </div>

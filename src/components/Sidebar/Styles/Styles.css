@@ -32,18 +32,18 @@
 }
 
 .sidebar-hidden .comprimir-button {
-  left: 5%;
+  left: 6%;
   transform: rotate(180deg);
 }
 
 .sidebar-hidden .logo-sidebar {
-  width: 25%;
+  width: 24%;
   height: 6%;
 }
 
 .comprimir-button {
   position: absolute;
-  left: 15%;
+  left: 14.6%;
   top: 10%;
   cursor: pointer;
   transition: all 0.5s linear;
@@ -51,8 +51,8 @@
 }
 
 .logo-sidebar{
-  width: 50%;
-  height: 7%;
+  width: 45%;
+  height: 6%;
 }
 
 .div-perfil-sidebar{
@@ -88,24 +88,29 @@
   flex-direction: column;
   width: 74.9%;
   height: 46vh;
-  gap: 1%;
+  gap: 0.4rem;
   justify-content: center;
+  position: relative;
 }
 
 .content-sidebar > a {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 9.5%;
+  height: auto;
   gap: 4%;
+  position: relative;
+  z-index: 1;
 }
 
 .selected-dashboard {
   background-color: #FF7F00;
   border-radius: 10px 0px 0px 10px;
   margin-left: -9px;
-  padding-left: 18px;
+  padding-left: 19px;
   color: #fff;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .selected-dashboard > img {
@@ -118,6 +123,8 @@
   margin-left: -20px;
   padding-left: 20px;
   color: #3A3A3A;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .selected-img{display: none;}
@@ -138,6 +145,8 @@
 .sidebar-hidden .selected-dashboard {
   margin-left: -32%;
   width: 65%;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
 }
 
 .sidebar-hidden .content-sidebar {

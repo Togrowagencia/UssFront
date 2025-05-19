@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
+  "scripts": {
     "dev": "vite",
     "dev:staging": "vite --mode staging",
     "dev:prod": "vite --mode production",
@@ -12,12 +12,15 @@
     "preview": "vite preview",
     "build:staging": "vite build --mode staging",
     "build:prod": "vite build --mode production"
-  },  
+  },
   "dependencies": {
+    "antd": "^5.25.1",
     "axios": "^1.9.0",
+    "framer-motion": "^12.12.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",
+    "react-toastify": "^11.0.5",
     "socketio": "^1.0.0"
   },
   "devDependencies": {

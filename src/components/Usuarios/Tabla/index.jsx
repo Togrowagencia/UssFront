@@ -3,9 +3,10 @@ import { usuariosData } from './Data';
 
 const Tabla = () => {
   return (
-    <table className=" w-[60%]">
+    <div className="w-full flex justify-center items-center my-[1.7%]">
+      <table className=" w-full border-collapse ">
         <thead className="text-left ">
-            <tr className="">
+          <tr className="">
                 <th>Foto</th>
                 <th>Nombre</th>
                 <th>Usuario</th>
@@ -35,7 +36,8 @@ const Tabla = () => {
             </tr>
           ))}
         </tbody>
-    </table>
+      </table>
+    </div>
   );
 };
 

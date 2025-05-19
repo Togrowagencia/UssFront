@@ -47,7 +47,7 @@ body {
   color: #ff7f00;
 }
 
-.bg-mostaza-claro {
+.bg-mostaza-suave {
   background-color: #ff7f00;
 }
 
@@ -119,11 +119,11 @@ body {
   background-color: #b0b0b0;
 }
 
-.gris-platinio {
+.gris-platino {
   color: #d9d9d9;
 }
 
-.bg-gris-platinio {
+.bg-gris-platino {
   background-color: #d9d9d9;
 }
 
@@ -221,6 +221,19 @@ input {
   outline: none;
   border: 0px solid;
   background-color: transparent;
+}
+
+.custom-drawer .ant-drawer-content-wrapper {
+  margin: 1% !important;
+  width: 28.5% !important;
+}
+
+.custom-drawer .ant-drawer-content {
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
 }
 
 .sombra {

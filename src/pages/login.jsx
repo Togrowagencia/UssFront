@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 export const Login = () => {
+
+  const navigate = useNavigate();
+  
   return (
     <div className="flex flex-row min-h-screen w-screen">
       {/* Columna 1: Imagen */}
@@ -36,7 +41,6 @@ export const Login = () => {
           <form className="space-y-4">
             <div className="max-w-sm m-[4%]">
               <div className="relative">
-                {/* Icono SVG a la izquierda */}
                 <div className="absolute inset-y-0 left-0 flex items-center pointer-events-none ">
                   <img src="/svg/user.svg" alt="" className="w-[60%] h-[60%]" />
                 </div>
@@ -85,7 +89,12 @@ export const Login = () => {
               </p>
             </div>
 
-            <button class="bg-primary text-white font-bold rounded-[5px] border-primary w-[96%] mx-[4%] py-[1.5%]  hover:bg-primary/85 transition duration-300 ease-in-out">
+            <button
+              onClick={() => {
+                navigate("/dashboard");
+              }}
+              className="bg-primary text-white font-bold rounded-[5px] border-primary w-[96%] mx-[4%] py-[1.5%]  hover:bg-primary/85 transition duration-300 ease-in-out"
+            >
               Ingresar
             </button>
           </form>
