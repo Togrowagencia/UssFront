@@ -1,0 +1,114 @@
+/* Estilos para el RangePicker */
+.ant-picker {
+  border: none !important;
+  background: transparent !important;
+}
+
+.ant-picker:hover {
+  border: none !important;
+}
+
+.ant-picker-focused {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Estilo para el ícono del calendario */
+.ant-picker-suffix {
+  display: none !important;
+}
+
+/* Estilo para el texto del input */
+.ant-picker-input > input {
+  color: #3a3a3a !important;
+  font-size: 14px !important;
+}
+
+/* Estilo para el separador entre fechas */
+.ant-picker-range-separator {
+  color: #ff7f00 !important;
+}
+
+/* Estilo para los botones de acción en el popup */
+.ant-picker-footer {
+  border-top: 1px solid #ff7f00 !important;
+}
+
+.ant-picker-footer .ant-btn {
+  border-radius: 4px !important;
+}
+
+/* Estilo para las fechas seleccionadas en el calendario */
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-hover-end .ant-picker-cell-inner {
+  background: #ff7f00 !important;
+  color: #fff !important;
+}
+
+/* Estilo para el hover de las fechas en el calendario */
+.ant-picker-cell-in-view:hover .ant-picker-cell-inner {
+  background: #ff7f00 !important;
+  color: #fff !important;
+}
+
+/* Borde inferior del input (cuando hay error o validación) */
+.ant-picker-status-error, .ant-picker-status-error:focus, .ant-picker-status-error.ant-picker-focused {
+  border-color: #ff7f00 !important;
+  box-shadow: 0 0 0 2px rgba(255, 127, 0, 0.2) !important;
+}
+
+/* Color del día actual */
+.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border-color: #ff7f00 !important;
+}
+
+/* Color del rango seleccionado */
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-end) .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-start) .ant-picker-cell-inner {
+  background: #ff7f00 !important;
+  color: #fff !important;
+}
+
+/* Línea inferior naranja cuando el RangePicker está enfocado o activo */
+.ant-picker-range .ant-picker-active-bar {
+  border-color: #ff7f00 !important;
+  box-shadow: 0 2px 0 0 #ff7f00 !important;
+}
+
+.ant-picker-range .ant-picker-active-bar {
+  background: transparent !important;
+}
+
+/* Cambia el fondo del rango seleccionado (días entre el inicio y el fin) */
+.ant-picker-cell-in-view.ant-picker-cell-in-range .ant-picker-cell-inner {
+  background: #f5f5f5 !important;
+  color: #3a3a3a !important; /* Puedes ajustar el color del texto si lo deseas */
+}
+
+/* Opcional: para el hover sobre el rango */
+.ant-picker-cell-in-view.ant-picker-cell-range-hover .ant-picker-cell-inner {
+  background: #f5f5f5 !important;
+  color: #3a3a3a !important;
+}
+
+/* Días en el rango (mes actual) */
+.ant-picker-cell-in-view.ant-picker-cell-in-range .ant-picker-cell-inner {
+  background: #f5f5f5 !important;
+  color: #3a3a3a !important;
+}
+/* Días en el rango (fuera del mes actual) */
+.ant-picker-cell-in-range .ant-picker-cell-inner {
+  background: #f5f5f5 !important;
+  color: #3a3a3a !important;
+}
+
+/* Cambia el fondo azul claro del rango seleccionado (la franja entre los días) */
+.ant-picker-cell-in-range::before {
+  background: #f5f5f5 !important;
+}
+
+

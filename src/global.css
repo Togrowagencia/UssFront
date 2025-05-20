@@ -71,6 +71,10 @@ body {
   color: #3a9d5d;
 }
 
+.bg-verde {
+  background-color: #3a9d5d;
+}
+
 .azul {
   color: #284c7e;
 }
@@ -244,3 +248,49 @@ input {
     -3px 0px 6px 0px rgba(181, 181, 181, 0.1);
 }
 /*End::Global*/
+
+/* Sweet alert */
+.custom-popup-class {
+  border: 1px solid #fff !important;
+  border-radius: 10px !important;
+}
+
+.custom-confirm-button {
+  border-radius: 20px !important;
+  padding: 6px 24px !important;
+  font-size: 14px !important;
+}
+
+.custom-cancel-button {
+  border-radius: 20px !important;
+  padding: 6px 24px !important;
+  font-size: 14px !important;
+  border: 1px solid #333 !important;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.custom-image-class {
+  animation: shake 1s ease-in-out;
+  animation-iteration-count: 1;
+  /* Hará que la animación se ejecute 1 vez (1 segundos) */
+  animation-fill-mode: forwards;
+  /* Mantiene el estado final */
+  transform-origin: center center;
+}
+
+/* Sweet alert */
