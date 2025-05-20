@@ -34,8 +34,12 @@ export const Sidebar = () => {
         return location.pathname === path
           ? "selected-dashboard"
           : "unselected-dashboard";
-      case "/gestion-poligrafia":
-        return location.pathname === path
+      /*Poligrafia*/
+      case "/poligrafia/especifico":
+      case "/poligrafia/preempleo":
+      case "/poligrafia/rutina":
+      case "/poligrafia/adjunto":
+        return location.pathname.startsWith("/poligrafia/")
           ? "selected-dashboard"
           : "unselected-dashboard";
       case "/gestion-visitas":
@@ -213,7 +217,7 @@ export const Sidebar = () => {
           <h4>Gestión de Adversos</h4>
         </Link>
 
-        <Link to="/gestion-poligrafia" className={getSelectedLink("/gestion-poligrafia")}>
+        <Link to="/poligrafia/especifico" className={getSelectedLink("/poligrafia/especifico")}>
           <img src="/svg/sidebar/gestion.svg" className="noselected-img" />
           <img src="/svg/sidebar/gestion-selected.svg" className="selected-img" />
           <h4>Gestión de poligrafía</h4>

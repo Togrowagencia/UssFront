@@ -11,10 +11,16 @@ import Seleccion from '@/pages/Seleccion';
 import Empresas from '@/pages/Empresas';
 import EstudiosSeguridad from '@/pages/EstudiosSeguridad';
 import GestionAdversos from '@/pages/GestionAdversos';
-import GestionPoligrafia from '@/pages/GestionPoligrafia';
+/*Poligrafia*/
+import PoligrafiaEspecifico from '@/pages/PoligrafiaEspecifico';
+import PolografiaPreempleo from '@/pages/PolografiaPreempleo';
+import PoligrafiaRutina from '@/pages/PoligrafiaRutina';
+import PoligrafiaAdjunto from '@/pages/PoligrafiaAdjunto';
+/*End::Poligrafia*/
 import GestionVisitas from '@/pages/GestionVisitas';
 import Envio from '@/pages/Envio';
 import Restablecer from '@/pages/Restablecer';
+import ConsolidadoUSS from '@/pages/ConsolidadoUSS';
 /*End::Routes*/
 
 /*Routes Protection*/
@@ -58,8 +64,14 @@ function App() {
         <Route path="/empresas" element={<Empresas />} />
         <Route path="/estudios-seguridad" element={<EstudiosSeguridad />} />
         <Route path="/gestion-adversos" element={<GestionAdversos />} />
-        <Route path="/gestion-poligrafia" element={<GestionPoligrafia />} />
+        {/*Poligrafia*/}
+        <Route path="/poligrafia/especifico" element={<PoligrafiaEspecifico />} />
+        <Route path="/poligrafia/preempleo" element={<PolografiaPreempleo />} />
+        <Route path="/poligrafia/rutina" element={<PoligrafiaRutina />} />
+        <Route path="/poligrafia/adjunto" element={<PoligrafiaAdjunto />} />
+        {/*End::Poligrafia*/}
         <Route path="/gestion-visitas" element={<GestionVisitas />} />
+        <Route path="/consolidado-uss" element={<ConsolidadoUSS />} />
 
         /**404 */
         <Route path="*" element={<Navigate to="/" />} />

@@ -1,7 +1,5 @@
 import React from "react";
 import { dataSeleccion } from "./Data/Data";
-import Swal from "sweetalert2";
-import "sweetalert2/src/sweetalert2.scss";
 
 const Tabla = () => {
   return (
@@ -10,103 +8,113 @@ const Tabla = () => {
         <div className="min-w-[125rem] max-h-[40rem]">
           <table className="w-full border-collapse table-fixed">
             <colgroup>
-              {/* Nombre */}
-              <col style={{ width: "12vw" }} />
-              {/* Cedula */}
-              <col style={{ width: "7vw" }} />
-              {/* Telefono */}
-              <col style={{ width: "7vw" }} />
+              {/* ID */}
+              <col style={{ width: "3vw" }} />
+              {/* Fecha */}
+              <col style={{ width: "6vw" }} />
+              {/* Cliente */}
+              <col style={{ width: "10vw" }} />
               {/* Ciudad */}
               <col style={{ width: "7vw" }} />
-              {/* Correo Electronico */}
-              <col style={{ width: "16vw" }} />
-              {/* Cargo al que Aspirar */}
+              {/* Cedeula */}
+              <col style={{ width: "10vw" }} />
+              {/* Nombre */}
               <col style={{ width: "14vw" }} />
-              {/* Aspiracion Salarial */}
-              <col style={{ width: "10vw" }} />
-              {/* Empresa */}
-              <col style={{ width: "10vw" }} />
-              {/* Fecha Contacto */}
-              <col style={{ width: "8vw" }} />
-              {/* Observaciones */}
-              <col style={{ width: "10vw" }} />
-              {/* Fecha Entrevista */}
-              <col style={{ width: "10vw" }} />
-              {/* Modalidad de entrevista */}
-              <col style={{ width: "12.5vw" }} />
-              {/* Evaluador */}
-              <col style={{ width: "13vw" }} />
-              {/* Fecha de Evaluacion */}
-              <col style={{ width: "10vw" }} />
-              {/* Modalidad de evacuacion */}
-              <col style={{ width: "12.5vw" }} />
-              {/* Puebas Aplicadas */}
-              <col style={{ width: "12vw" }} />
-              {/* Resultado */}
-              <col style={{ width: "7vw" }} />
-              {/* Observacion Final */}
+              {/* Cargo */}
+              <col style={{ width: "14vw" }} />
+              {/* Antecedentes */}
+              <col style={{ width: "9vw" }} />
+              {/* Referencias Laborales */}
               <col style={{ width: "11vw" }} />
-              {/* Adjuntos */}
+              {/* Hechos */}
+              <col style={{ width: "9vw" }} />
+              {/* Referencias Academicas */}
+              <col style={{ width: "13vw" }} />
+              {/* Consulta Financiera con Huella */}
+              <col style={{ width: "15vw" }} />
+              {/* Consulta Financiera sin Huella */}
+              <col style={{ width: "15vw" }} />
+              {/* Poligrafo */}
+              <col style={{ width: "8vw" }} />
+              {/* Visita Domiciliaria */}
+              <col style={{ width: "11vw" }} />
+              {/* Persona que Realiza la visita */}
+              <col style={{ width: "14vw" }} />
+              {/* Modalidad de visita */}
+              <col style={{ width: "11vw" }} />
+              {/* Proceso de selección */}
+              <col style={{ width: "12vw" }} />
+              {/* Observaciones */}
+              <col style={{ width: "9vw" }} />
+              {/* Facturacion */}
+              <col style={{ width: "9vw" }} />
+              {/* Historial Financiero */}
               <col style={{ width: "12.2vw" }} />
             </colgroup>
             <thead className="text-left">
               <tr className="">
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Nombre
+                  ID
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Cedula
+                  Fecha
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Telefono
+                  Cliente
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
                   Ciudad
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Correo Electronico
+                  Cedeula
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Cargo al que Aspirar
+                  Nombre
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Aspiracion Salarial
+                  Cargo
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Empresa
+                  Antecedentes
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Fecha Contacto
+                  Referencias Laborales
+                </th>
+                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
+                  Hechos
+                </th>
+                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
+                  Referencias Academicas
+                </th>
+                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
+                  Consulta Financiera con Huella
+                </th>
+                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
+                Consulta Financiera sin Huella
+                </th>
+                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
+                  Poligrafo
+                </th>
+                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
+                  Visita Domiciliaria
+                </th>
+                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
+                  Persona que Realiza la visita
+                </th>
+                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
+                  Modalidad de visita
+                </th>
+                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
+                  Proceso de selección
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
                   Observaciones
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Fecha de Entrevista
+                  Facturacion
                 </th>
                 <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Modalidad de entrevista
-                </th>
-                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Evaluador
-                </th>
-                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Fecha de Evaluacion
-                </th>
-                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Modalidad de evacuacion
-                </th>
-                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Puebas Aplicadas
-                </th>
-                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Resultado
-                </th>
-                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Observacion Final
-                </th>
-                <th className="px-[1%] border-b-[1px] border-[#E5E5E5] whitespace-nowrap">
-                  Adjuntos
+                  Historial Financiero
                 </th>
               </tr>
             </thead>
@@ -119,12 +127,12 @@ const Tabla = () => {
                   <td
                     className={
                       index % 2 === 0
-                        ? "textos gris px-[1%] py-[0.6%] rounded-l-[10px] truncate"
-                        : "textos gris px-[1%] py-[0.4%] rounded-l-[10px] truncate"
+                        ? "textos gris px-[1%] py-[0.4%] rounded-l-[10px] truncate"
+                        : "textos gris px-[1%] py-[0.28%] rounded-l-[10px] truncate"
                     }
-                    title={seleccion.nombre}
+                    title={seleccion.id}
                   >
-                    {seleccion.nombre}
+                    {seleccion.id}
                   </td>
                   <td
                     className={
@@ -132,9 +140,9 @@ const Tabla = () => {
                         ? "textos gris px-[1%] truncate"
                         : "textos gris px-[1%] truncate"
                     }
-                    title={seleccion.cedula}
+                    title={seleccion.fecha}
                   >
-                    {seleccion.cedula}
+                    {seleccion.fecha}
                   </td>
                   <td
                     className={
@@ -142,9 +150,9 @@ const Tabla = () => {
                         ? "textos gris px-[1%] truncate"
                         : "textos gris px-[1%] truncate"
                     }
-                    title={seleccion.telefono}
+                    title={seleccion.cliente}
                   >
-                    {seleccion.telefono}
+                    {seleccion.cliente}
                   </td>
                   <td
                     className={
@@ -162,9 +170,19 @@ const Tabla = () => {
                         ? "textos gris px-[1%] truncate"
                         : "textos gris px-[1%] truncate"
                     }
-                    title={seleccion.correo}
+                    title={seleccion.cedula}
                   >
-                    {seleccion.correo}
+                    {seleccion.cedula}
+                  </td>
+                  <td
+                    className={
+                      index % 2 === 0
+                        ? "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate"
+                    }
+                    title={seleccion.nombre}
+                  >
+                    {seleccion.nombre}
                   </td>
                   <td
                     className={
@@ -182,9 +200,9 @@ const Tabla = () => {
                         ? "textos gris px-[1%] truncate"
                         : "textos gris px-[1%] truncate"
                     }
-                    title={seleccion.aspiracionSalarial}
+                    title={seleccion.antecedentes}
                   >
-                    {seleccion.aspiracionSalarial}
+                    {seleccion.antecedentes}
                   </td>
                   <td
                     className={
@@ -192,9 +210,9 @@ const Tabla = () => {
                         ? "textos gris px-[1%] truncate"
                         : "textos gris px-[1%] truncate"
                     }
-                    title={seleccion.empresa}
+                    title={seleccion.referenciasLaborales}
                   >
-                    {seleccion.empresa}
+                    {seleccion.referenciasLaborales}
                   </td>
                   <td
                     className={
@@ -202,9 +220,89 @@ const Tabla = () => {
                         ? "textos gris px-[1%] truncate"
                         : "textos gris px-[1%] truncate"
                     }
-                    title={seleccion.fechaContacto}
+                    title={seleccion.hechos}
                   >
-                    {seleccion.fechaContacto}
+                    {seleccion.hechos}
+                  </td>
+                  <td
+                    className={
+                      index % 2 === 0
+                        ? "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate"
+                    }
+                    title={seleccion.referenciasAcademicas}
+                  >
+                    {seleccion.referenciasAcademicas}
+                  </td>
+                  <td
+                    className={
+                      index % 2 === 0
+                        ? "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate"
+                    }
+                    title={seleccion.consultaFinancieraConHuella}
+                  >
+                    {seleccion.consultaFinancieraConHuella}
+                  </td>
+                  <td
+                    className={
+                      index % 2 === 0
+                        ? "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate"
+                    }
+                    title={seleccion.consultaFinancieraSinHuella}
+                  >
+                    {seleccion.consultaFinancieraSinHuella}
+                  </td>
+                  <td
+                    className={
+                      index % 2 === 0
+                        ? "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate"
+                    }
+                    title={seleccion.poligrafo}
+                  >
+                    {seleccion.poligrafo}
+                  </td>
+                  <td
+                    className={
+                      index % 2 === 0
+                        ? "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate"
+                    }
+                    title={seleccion.visitaDomiciliaria}
+                  >
+                    {seleccion.visitaDomiciliaria}
+                  </td>
+                  <td
+                    className={
+                      index % 2 === 0
+                        ? "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate"
+                    }
+                    title={seleccion.personaVisita}
+                  >
+                    {seleccion.personaVisita}
+                  </td>
+                  <td
+                    className={
+                      index % 2 === 0
+                        ? "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate"
+                    }
+                    title={seleccion.modalidadVisita}
+                  >
+                    {seleccion.modalidadVisita}
+                  </td>
+                  <td
+                    className={
+                      index % 2 === 0
+                        ? "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate"
+                    }
+                    title={seleccion.procesoSeleccion}
+                  >
+                    {seleccion.procesoSeleccion}
                   </td>
                   <td
                     className={
@@ -220,81 +318,11 @@ const Tabla = () => {
                     className={
                       index % 2 === 0
                         ? "textos gris px-[1%] truncate"
-                        : "textos gris px-[1%] truncate"
+                        : "textos gris px-[1%] truncate rounded-r-[10px]"
                     }
-                    title={seleccion.fechaEntrevista}
+                    title={seleccion.facturacion}
                   >
-                    {seleccion.fechaEntrevista}
-                  </td>
-                  <td
-                    className={
-                      index % 2 === 0
-                        ? "textos gris px-[1%] truncate"
-                        : "textos gris px-[1%] truncate"
-                    }
-                    title={seleccion.modalidadEntrevista}
-                  >
-                    {seleccion.modalidadEntrevista}
-                  </td>
-                  <td
-                    className={
-                      index % 2 === 0
-                        ? "textos gris px-[1%] truncate"
-                        : "textos gris px-[1%] truncate"
-                    }
-                    title={seleccion.evaluador}
-                  >
-                    {seleccion.evaluador}
-                  </td>
-                  <td
-                    className={
-                      index % 2 === 0
-                        ? "textos gris px-[1%] truncate"
-                        : "textos gris px-[1%] truncate"
-                    }
-                    title={seleccion.fechaEvaluacion}
-                  >
-                    {seleccion.fechaEvaluacion}
-                  </td>
-                  <td
-                    className={
-                      index % 2 === 0
-                        ? "textos gris px-[1%] truncate"
-                        : "textos gris px-[1%] truncate"
-                    }
-                    title={seleccion.modalidadEvaluacion}
-                  >
-                    {seleccion.modalidadEvaluacion}
-                  </td>
-                  <td
-                    className={
-                      index % 2 === 0
-                        ? "textos gris px-[1%] truncate"
-                        : "textos gris px-[1%] truncate"
-                    }
-                    title={seleccion.pruebasAplicadas}
-                  >
-                    {seleccion.pruebasAplicadas}
-                  </td>
-                  <td
-                    className={
-                      index % 2 === 0
-                        ? "textos gris px-[1%] truncate"
-                        : "textos gris px-[1%] truncate"
-                    }
-                    title={seleccion.resultado}
-                  >
-                    {seleccion.resultado}
-                  </td>
-                  <td
-                    className={
-                      index % 2 === 0
-                        ? "textos gris px-[1%] truncate"
-                        : "textos gris px-[1%] truncate"
-                    }
-                    title={seleccion.observacionFinal}
-                  >
-                    {seleccion.observacionFinal}
+                    {seleccion.facturacion}
                   </td>
                   <td
                     className={
@@ -302,14 +330,9 @@ const Tabla = () => {
                         ? "textos gris px-[1%] truncate"
                         : "textos gris px-[1%] truncate rounded-r-[10px]"
                     }
-                    
+                    title={seleccion.historialFinanciero}
                   >
-                    {seleccion.adjuntos ? (
-                      <div className="flex">
-                        <img src="/svg/adjunto.svg" alt="adjunto" />
-                        <p className="textos gris px-[1%] truncate">Archivo Adjunto.doc</p>
-                      </div>
-                    ) : null}
+                    {seleccion.historialFinanciero}
                   </td>
                 </tr>
               ))}

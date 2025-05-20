@@ -7,7 +7,19 @@ export const dataSeleccion = [
     ciudad: "Bogotá",
     correo: "juan.perez@email.com",
     cargo: "Desarrollador Frontend",
-    aspiracionSalarial: "$3.500.000"
+    aspiracionSalarial: "$3.500.000",
+    empresa: "Tech Solutions",
+    fechaContacto: "2024-03-15",
+    observaciones: "Candidato interesado en la posición",
+    fechaEntrevista: "2024-03-20",
+    modalidadEntrevista: "Presencial",
+    evaluador: "María González",
+    fechaEvaluacion: "2024-03-20",
+    modalidadEvaluacion: "Presencial",
+    pruebasAplicadas: "Técnica, Psicológica",
+    resultado: "Aprobado",
+    observacionFinal: "Buen desempeño en las pruebas",
+    adjuntos: ["CV.pdf", "Certificados.pdf"]
   },
   {
     id: 2,
@@ -17,7 +29,19 @@ export const dataSeleccion = [
     ciudad: "Medellín",
     correo: "maria.lopez@email.com",
     cargo: "Diseñador UI/UX",
-    aspiracionSalarial: "$3.800.000"
+    aspiracionSalarial: "$3.800.000",
+    empresa: "Design Studio",
+    fechaContacto: "2024-03-14",
+    observaciones: "Portafolio destacado",
+    fechaEntrevista: "2024-03-19",
+    modalidadEntrevista: "Virtual",
+    evaluador: "Carlos Ramírez",
+    fechaEvaluacion: "2024-03-19",
+    modalidadEvaluacion: "Virtual",
+    pruebasAplicadas: "Diseño, Psicológica",
+    resultado: "Pendiente",
+    observacionFinal: "En revisión de portafolio",
+    adjuntos: ["Portafolio.pdf"]
   },
   {
     id: 3,
@@ -27,7 +51,19 @@ export const dataSeleccion = [
     ciudad: "Cali",
     correo: "carlos.rodriguez@email.com",
     cargo: "Desarrollador Backend",
-    aspiracionSalarial: "$4.200.000"
+    aspiracionSalarial: "$4.200.000",
+    empresa: "Software Corp",
+    fechaContacto: "2024-03-13",
+    observaciones: "Experiencia en Node.js",
+    fechaEntrevista: "2024-03-18",
+    modalidadEntrevista: "Híbrida",
+    evaluador: "Ana Martínez",
+    fechaEvaluacion: "2024-03-18",
+    modalidadEvaluacion: "Híbrida",
+    pruebasAplicadas: "Técnica, Psicológica",
+    resultado: "Aprobado",
+    observacionFinal: "Excelente en prueba técnica",
+    adjuntos: ["CV.pdf", "Certificados.pdf", "Proyectos.pdf"]
   },
   {
     id: 4,
@@ -37,7 +73,19 @@ export const dataSeleccion = [
     ciudad: "Barranquilla",
     correo: "ana.martinez@email.com",
     cargo: "Project Manager",
-    aspiracionSalarial: "$5.000.000"
+    aspiracionSalarial: "$5.000.000",
+    empresa: "Project Solutions",
+    fechaContacto: "2024-03-12",
+    observaciones: "PMP certificada",
+    fechaEntrevista: "2024-03-17",
+    modalidadEntrevista: "Virtual",
+    evaluador: "Pedro Gómez",
+    fechaEvaluacion: "2024-03-17",
+    modalidadEvaluacion: "Virtual",
+    pruebasAplicadas: "Gestión, Psicológica",
+    resultado: "Aprobado",
+    observacionFinal: "Experiencia comprobada",
+    adjuntos: ["CV.pdf", "Certificaciones.pdf"]
   },
   {
     id: 5,
@@ -47,6 +95,18 @@ export const dataSeleccion = [
     ciudad: "Cartagena",
     correo: "pedro.gomez@email.com",
     cargo: "DevOps Engineer",
-    aspiracionSalarial: "$4.500.000"
+    aspiracionSalarial: "$4.500.000",
+    empresa: "Cloud Systems",
+    fechaContacto: "2024-03-11",
+    observaciones: "Experto en AWS",
+    fechaEntrevista: "2024-03-16",
+    modalidadEntrevista: "Presencial",
+    evaluador: "Laura Sánchez",
+    fechaEvaluacion: "2024-03-16",
+    modalidadEvaluacion: "Presencial",
+    pruebasAplicadas: "Técnica, Psicológica",
+    resultado: "Pendiente",
+    observacionFinal: "En evaluación técnica",
+    adjuntos: ["CV.pdf", "Certificaciones_AWS.pdf"]
   }
 ];

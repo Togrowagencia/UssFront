@@ -100,7 +100,7 @@ const Accesos = () => {
           <div className="flex justify-end items-center absolute right-[-1.8vh] top-[33%]">
             <img
               onClick={() => {
-                navigate("/gestion-visitas");
+                navigate("/consolidado-uss");
               }}
               src="/svg/dashboard/flechaN.svg"
               alt=""

@@ -1,5 +1,5 @@
 import React from "react";
-import { dataPoligrafia } from "./Data/Data";
+import { dataPoligrafia } from "../Data/Data";
 import Swal from "sweetalert2";
 import "sweetalert2/src/sweetalert2.scss";
 
