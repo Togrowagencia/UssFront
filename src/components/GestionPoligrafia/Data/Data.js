@@ -9,7 +9,9 @@ export const dataPoligrafia = [
     direccion: "Calle 123, Bogotá",
     empresa: "Empresa A",
     calidad: "Alta",
-    estado: "Activo"
+    estado: "Activo",
+    resultado: "Aprobado",
+    conclusion: "El candidato cumple con todos los requisitos establecidos"
   },
   {
     id: 2,
@@ -21,7 +23,9 @@ export const dataPoligrafia = [
     direccion: "Calle 456, Medellín",
     empresa: "Empresa B",
     calidad: "Media",
-    estado: "Inactivo"
+    estado: "Inactivo",
+    resultado: "Rechazado",
+    conclusion: "Se encontraron inconsistencias en la información proporcionada"
   },
   {
     id: 3,
@@ -33,7 +37,9 @@ export const dataPoligrafia = [
     direccion: "Calle 789, Cali",
     empresa: "Empresa C",
     calidad: "Alta",
-    estado: "Activo"
+    estado: "Activo",
+    resultado: "Aprobado",
+    conclusion: "El candidato cumple con los requisitos mínimos"
   },
   {
     id: 4,
@@ -45,7 +51,9 @@ export const dataPoligrafia = [
     direccion: "Calle 101, Barranquilla",
     empresa: "Empresa D",
     calidad: "Baja",
-    estado: "Inactivo"
+    estado: "Inactivo",
+    resultado: "Pendiente",
+    conclusion: "Se requiere información adicional para completar la evaluación"
   },
   {
     id: 5,
@@ -57,6 +65,8 @@ export const dataPoligrafia = [
     direccion: "Calle 123, Cartagena",
     empresa: "Empresa E",
     calidad: "Media",
-    estado: "Activo"
+    estado: "Activo",
+    resultado: "Aprobado",
+    conclusion: "El candidato cumple con los requisitos establecidos"
   }
 ];

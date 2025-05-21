@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 
-{/* Componentes de filtros */}
+{
+  /* Componentes de filtros */
+}
 import FiltroEmpresa from "./Filtros/FiltroEmpresa";
 import FiltroCargo from "./Filtros/FiltroCargo";
 import FiltroCiudad from "./Filtros/FiltroCiudad";
@@ -13,12 +15,16 @@ import RangoFecha from "./Filtros/RagoFecha";
 
 import SelectPoligrafia from "./SelectPoligrafia";
 
-{/* Drawers */}
+{
+  /* Drawers */
+}
 import CrearUsuarioDrawer from "../Drawers/CrearUsuario";
 import CrearEmpresaDrawer from "../Drawers/CrearEmpresa";
 import NuevoAdversoDrawer from "../Drawers/NuevoAdverso";
 
-{/* Componentes */}
+{
+  /* Componentes */
+}
 import Buscador from "./Buscador";
 import Notificacion from "./Notificacion";
 import CrearUsuario from "./CrearUsuario";
@@ -28,7 +34,7 @@ import NuevoAdverso from "./NuevoAdverso";
 import NuevaPoligrafia from "./NuevaPoligrafia";
 import NuevaSeleccion from "./NuevaSeleccion";
 import NuevaVisita from "./NuevaVisita";
-import Exportar from "./exportar";
+import Exportar from "./Exportar";
 
 export const Header = ({ onSearch }) => {
   const location = useLocation();
@@ -40,13 +46,19 @@ export const Header = ({ onSearch }) => {
   const isConsolidadoUSSPage = location.pathname === "/consolidado-uss";
   const isSeleccionPage = location.pathname === "/seleccion";
   const isVisitasPage = location.pathname === "/gestion-visitas";
-  {/* Poligrafia */}
-  const isPoligrafiaEspecificoPage = location.pathname === "/poligrafia/especifico";
-  const isPoligrafiaPreEntrenoPage = location.pathname === "/poligrafia/preentreno";
+  {
+    /* Poligrafia */
+  }
+  const isPoligrafiaEspecificoPage =
+    location.pathname === "/poligrafia/especifico";
+  const isPoligrafiaPreEmpleoPage =
+    location.pathname === "/poligrafia/preempleo";
   const isPoligrafiaRutinaPage = location.pathname === "/poligrafia/rutina";
   const isPoligrafiaAdjuntoPage = location.pathname === "/poligrafia/adjunto";
-  {/* End::Poligrafia */}
-   
+  {
+    /* End::Poligrafia */
+  }
+
   // Estado para el drawer
   const [openUsuario, setOpenUsuario] = useState(false);
   const [openEmpresa, setOpenEmpresa] = useState(false);
@@ -58,7 +70,6 @@ export const Header = ({ onSearch }) => {
   const showDrawerAdversos = () => setOpenAdversos(true);
   const onCloseAdversos = () => setOpenAdversos(false);
 
-
   return (
     <div className="h-[10%] w-full flex justify-between items-end">
       {/* Componente de la etiqueta de bienvenida */}
@@ -67,9 +78,7 @@ export const Header = ({ onSearch }) => {
       ) : null}
 
       {/* Componente de consolidado USS */}
-      {isConsolidadoUSSPage ? (
-          <Exportar />
-      ) : null}
+      {isConsolidadoUSSPage ? <Exportar /> : null}
 
       {/* Componentes de estudios de seguridad */}
       {isEstudiosPage ? (
@@ -78,19 +87,15 @@ export const Header = ({ onSearch }) => {
           <FiltroEmpresa />
           <FiltroCargo />
           <RangoFecha />
-          
+
           {/* Componente boton */}
           <NuevoEstudio />
         </div>
       ) : null}
 
       {/* Componentes de los botones */}
-      {isUsuariosPage ? (
-        <CrearUsuario onClick={showDrawerUsuario} />
-      ) : null}
-      {isEmpresasPage ? (
-        <CrearEmpresa onClick={showDrawerEmpresa} />
-      ) : null}
+      {isUsuariosPage ? <CrearUsuario onClick={showDrawerUsuario} /> : null}
+      {isEmpresasPage ? <CrearEmpresa onClick={showDrawerEmpresa} /> : null}
 
       {/* Componentes de gestion de adversos */}
       {isAdversosPage ? (
@@ -107,11 +112,27 @@ export const Header = ({ onSearch }) => {
       ) : null}
 
       {/* Componentes de gestion de poligrafia */}
-      {isPoligrafiaEspecificoPage || isPoligrafiaPreEntrenoPage || isPoligrafiaRutinaPage ? (
+      {isPoligrafiaEspecificoPage ||
+      isPoligrafiaPreEmpleoPage ||
+      isPoligrafiaRutinaPage ? (
         <div className="flex items-center gap-[2%] w-[90%]">
           {/* Componentes de filtros */}
           <FiltroEmpresa />
           <FiltroDelito />
+          <SelectPoligrafia />
+
+          {/* Componente boton */}
+          <NuevaPoligrafia />
+        </div>
+      ) : null}
+
+      {/* Componentes de gestion de poligrafia Adjuntos*/}
+      {isPoligrafiaAdjuntoPage ? (
+        <div className="flex items-center gap-[2%] w-[90%]">
+          {/* Componentes de filtros */}
+          <FiltroEmpresa />
+          <FiltroEstado />
+          <RangoFecha />
           <SelectPoligrafia />
 
           {/* Componente boton */}
@@ -129,14 +150,12 @@ export const Header = ({ onSearch }) => {
           <RangoFecha />
 
           {/* Componente boton */}
-          <NuevaSeleccion />  
+          <NuevaSeleccion />
         </div>
       ) : null}
 
       {/* Componentes de gestion de visitas */}
-      {isVisitasPage ? (
-        <NuevaVisita />
-      ) : null}
+      {isVisitasPage ? <NuevaVisita /> : null}
 
       {/* Componente de la barra de búsqueda y notificaciones */}
       <div className="flex items-end justify-end gap-[2%]">

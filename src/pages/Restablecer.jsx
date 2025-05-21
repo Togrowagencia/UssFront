@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import "@/components/Restablecer/styles.css";
 const Restablecer = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
@@ -52,9 +52,9 @@ const Restablecer = () => {
 
   const getSVG = (type) =>
     type === "check" ? (
-      <img src="\svg\reset\correcto.svg" alt="" />
+      <img src="\svg\login\correcto.svg" alt="" />
     ) : type === "error" ? (
-      <img src="\svg\reset\incorrecto.svg" alt="" />
+      <img src="\svg\login\incorrecto.svg" alt="" />
     ) : null;
 
   const getSVGinput = (type) =>
@@ -74,18 +74,18 @@ const Restablecer = () => {
   return (
     <div className="w-screen h-screen flex justify-center items-center">
       <div className="w-[97%] h-[95.5vh] rounded-[35px] bg-[url('/images/fondo-restablecer.png')] bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center relative">
-        <div className="w-[38.6%] h-[71.4%] lp:h-[55vh] lpm:h-[50vh] bg-blanco rounded-[35px] flex flex-col justify-center items-center px-[7.5%] py-[4.5%]">
+        <div className="w-[37.6%] h-[71%] lp:h-[55vh] lpm:h-[50vh] bg-blanco rounded-[35px] flex flex-col justify-center items-center px-[3.5%] py-[2.5%]">
           <div className="flex flex-col justify-center items-center gap-[8%] w-full h-[20%]">
-            <h2 className="negro text-center my-4">Restablecer Contraseña</h2>
+            <h2 className="negro text-center">Restablecer Contraseña</h2>
             <p className="textos-bold gris-suave text-center">
               Tu contraseña será enviada a tu correo una vez sea reestablecida
             </p>
           </div>
 
           <div className="w-full h-[90%] flex flex-col justify-center items-start gap-[4%]">
-            <form className="w-full h-full flex flex-col justify-start mt-8 gap-[2%]">
-              <p className="gris textos">Nueva Contraseña</p>
-              <div className="border rounded-[50px] border-[#B5B5B5] w-full h-[11%] pl-[10px] flex flex-row justify-between items-center bg-fondo">
+            <form className="w-full h-full flex flex-col justify-start mt-[5%] gap-[2%]">
+              <h4 className="negro">Contraseña Nueva</h4>
+              <div className="border-b border-b-[#B5B5B5] w-full h-[11%] pl-[10px] flex flex-row justify-between items-center">
                 {conditions.lengthValid &&
                 conditions.numberValid &&
                 conditions.specialValid
@@ -93,7 +93,7 @@ const Restablecer = () => {
                   : getSVGinput("error")}
                 <input
                   type={showPassword ? "text" : "password"}
-                  className="textos gris w-[85%] flex pl-2"
+                  className="textos gris w-[85%] flex pl-[1%]"
                   name="password"
                   value={password}
                   onChange={handlePasswordChange}
@@ -102,16 +102,16 @@ const Restablecer = () => {
                   src="\svg\login\eye.svg"
                   alt=""
                   onClick={togglePassword}
-                  className="cursor-pointer mx-6 flex justify-center items-center"
+                  className="cursor-pointer mx-[4%] flex justify-center items-center"
                 />
               </div>
 
-              <div className="mb-[10px] flex gap-1">
+              <div className="mb-[10px] flex gap-[1.1%]">
                 {/* Barras activas */}
                 {[...Array(activeCount)].map((_, i) => (
                   <div
                     key={`active-${i}`}
-                    className={`${getColor()} custom-confirm h-[4px] rounded-full`}
+                    className={`${getColor()} custom-confirm h-[0.6vh] rounded-full`}
                   />
                 ))}
 
@@ -119,14 +119,14 @@ const Restablecer = () => {
                 {[...Array(leavingCount)].map((_, i) => (
                   <div
                     key={`leaving-${i}`}
-                    className={`${getColor()} custom-confirm shrink h-[4px] rounded-full`}
+                    className={`${getColor()} custom-confirm shrink h-[0.6vh] rounded-full`}
                   />
                 ))}
               </div>
 
               <div>
                 <p
-                  className={`p-reset textos-peques salmon ${
+                  className={`p-reset textos salmon ${
                     conditions.lengthValid ? "valid" : "invalid"
                   }`}
                 >
@@ -134,7 +134,7 @@ const Restablecer = () => {
                   caracteres
                 </p>
                 <p
-                  className={`p-reset textos-peques salmon ${
+                  className={`p-reset textos salmon ${
                     conditions.numberValid ? "valid" : "invalid"
                   }`}
                 >
@@ -142,7 +142,7 @@ const Restablecer = () => {
                   Debe contener al menos un numero
                 </p>
                 <p
-                  className={`p-reset textos-peques salmon ${
+                  className={`p-reset textos salmon ${
                     conditions.specialValid ? "valid" : "invalid"
                   }`}
                 >
@@ -151,14 +151,14 @@ const Restablecer = () => {
                 </p>
               </div>
 
-              <p className="gris textos">Confirmar contraseña</p>
-              <div className="border rounded-[50px] border-[#B5B5B5] w-full h-[11%] pl-[10px] mb-[10px] flex flex-row justify-between items-center bg-fondo">
+              <h4 className="negro mt-[3%]">Confirma tu contraseña</h4>
+              <div className="border-b border-b-[#B5B5B5] w-full h-[11%] pl-[10px] mb-[10px] flex flex-row justify-between items-center">
                 {conditions.coincide
                   ? getSVGinput("check")
                   : getSVGinput("error")}
                 <input
                   type={showPassword ? "text" : "password"}
-                  className="textos gris w-[85%] flex pl-2"
+                  className="textos gris w-[85%] flex pl-[1%]"
                   name="password2"
                   value={password2}
                   onChange={handlePasswordChange2}
@@ -167,12 +167,12 @@ const Restablecer = () => {
                   src="\svg\login\eye.svg"
                   alt=""
                   onClick={togglePassword}
-                  className="cursor-pointer mx-6 flex justify-center items-center"
+                  className="cursor-pointer mx-[4%] flex justify-center items-center"
                 />
               </div>
               <div>
                 <p
-                  className={`p-reset textos-peques ${
+                  className={`p-reset textos ${
                     conditions.coincide ? "valid" : "invalid"
                   }`}
                 >
@@ -181,15 +181,15 @@ const Restablecer = () => {
                 </p>
               </div>
 
-              <div className="flex items-center justify-start gap-[2%] w-full">
-                <button className="w-[50%] py-3 px-4 text-center bg-azul-alternativa  hover:bg-[#1E4483] transition-colors duration-300 textos blanco mt-5 rounded-[20px]">
-                  Restablecer contraseña
+              <div className="flex items-center justify-start gap-[2%] w-full mt-[7%]">
+                <button className="py-[2.2%] gris hover:text-[#fff] px-[8%] bg-mostaza-suave text-center textos blanco mt-5 rounded-[5px] hover:bg-[#d66a00] transition-colors duration-300 cursor-pointer">
+                  <h4>Restablecer contraseña</h4>
                 </button>
                 <Link
                   to="/"
-                  className="w-[50%] py-3 px-4 text-center textos blanco mt-5 p-2 rounded-[35px] bg-gris2 hover:bg-[#717171] transition-colors duration-300"
+                  className=" py-[2%] gris hover:text-[#fff] px-[8%] border border-[#4f4f4f] text-center mt-5 rounded-[5px] hover:bg-[#4f4f4f] transition-colors duration-300 cursor-pointer"
                 >
-                  Cancelar
+                  <h4>Cancelar</h4>
                 </Link>
               </div>
             </form>

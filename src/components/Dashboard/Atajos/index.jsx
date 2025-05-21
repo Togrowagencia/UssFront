@@ -18,7 +18,7 @@ const Atajos = () => {
             Ultima actualización: 19/03/2025
           </p>
         </div>
-        <div className="flex items-center mx-[2%]" onClick={() => navigate("/gestion-poligrafia")}>
+        <div className="flex items-center mx-[2%]" onClick={() => navigate("/poligrafia/especifico")}>
           <img src="/svg/dashboard/flechaN.svg" alt="" className="" />
         </div>
       </div>
@@ -52,7 +52,7 @@ const Atajos = () => {
             Ultima actualización: 19/03/2025
           </p>
         </div>
-        <div className="flex items-center mx-[2%]" onClick={() => navigate("/gestion-poligrafia")}>
+        <div className="flex items-center mx-[2%]" onClick={() => navigate("/poligrafia/rutina")}>
           <img src="/svg/dashboard/flechaN.svg" alt="" className="" />
         </div>
       </div>
@@ -69,7 +69,7 @@ const Atajos = () => {
             Ultima actualización: 19/03/2025
           </p>
         </div>
-        <div className="flex items-center mx-[2%]" onClick={() => navigate("/gestion-poligrafia")}>
+        <div className="flex items-center mx-[2%]" onClick={() => navigate("/poligrafia/adjunto")}>
           <img src="/svg/dashboard/flechaN.svg" alt="" className="" />
         </div>
       </div>
@@ -120,7 +120,7 @@ const Atajos = () => {
             Ultima actualización: 19/03/2025
           </p>
         </div>
-        <div className="flex items-center justify-end mx-[1%]" onClick={() => navigate("/gestion-poligrafia")}>
+        <div className="flex items-center justify-end mx-[1%]" onClick={() => navigate("/poligrafia/preempleo")}>
           <img src="/svg/dashboard/flechaN.svg" alt="" className="" />
         </div>
       </div>
