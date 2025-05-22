@@ -37,7 +37,7 @@ const items = [
 
 const TabsDashboard = () => {
   return (
-    <div className="flex w-[48.6%] h-[42vh] bg-blanco-suave rounded-[10px]">
+    <div className="flex justify-center h-[42vh] mx-[2.46%]">
       <AntdTabs
         defaultActiveKey="1"
         items={items}
