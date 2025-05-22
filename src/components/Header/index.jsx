@@ -45,7 +45,7 @@ export const Header = ({ onSearch }) => {
   const isAdversosPage = location.pathname === "/gestion-adversos";
   const isConsolidadoUSSPage = location.pathname === "/consolidado-uss";
   const isSeleccionPage = location.pathname === "/seleccion";
-  const isVisitasPage = location.pathname === "/gestion-visitas";
+  const isVisitasPage = location.pathname === "/gestion-visitas" || location.pathname === "/gestion-visitas/nueva";
   {
     /* Poligrafia */
   }

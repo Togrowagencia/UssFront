@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { disconnectSocket } from '@/settings/socket.js';
 import useAuth from '@/lib/hooks/useAuth';
+
 /*Routes*/
 import Login from '@/pages/login';
 import Usuarios  from '@/pages/Usuarios';
@@ -17,11 +18,15 @@ import PolografiaPreempleo from '@/pages/PolografiaPreempleo';
 import PoligrafiaRutina from '@/pages/PoligrafiaRutina';
 import PoligrafiaAdjunto from '@/pages/PoligrafiaAdjunto';
 /*End::Poligrafia*/
+/*GestionVisitas*/
 import GestionVisitas from '@/pages/GestionVisitas';
+import NuevaVisita from '@/pages/NuevaVisita';
+/*End::GestionVisitas*/
 import Envio from '@/pages/Envio';
 import Restablecer from '@/pages/Restablecer';
 import ConsolidadoUSS from '@/pages/ConsolidadoUSS';
 /*End::Routes*/
+
 
 /*Routes Protection*/
 const ProtectedRoute = ({ children }) => {
@@ -70,7 +75,10 @@ function App() {
         <Route path="/poligrafia/rutina" element={<PoligrafiaRutina />} />
         <Route path="/poligrafia/adjunto" element={<PoligrafiaAdjunto />} />
         {/*End::Poligrafia*/}
+        {/*GestionVisitas*/}
         <Route path="/gestion-visitas" element={<GestionVisitas />} />
+        <Route path="/gestion-visitas/nueva" element={<NuevaVisita />} />
+        {/*End::GestionVisitas*/}
         <Route path="/consolidado-uss" element={<ConsolidadoUSS />} />
 
         /**404 */

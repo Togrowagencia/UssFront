@@ -1,0 +1,22 @@
+export const empresas = [
+    "Microsoft Corporation",
+    "Apple Inc.",
+    "Amazon.com Inc.",
+    "Google LLC",
+    "Meta Platforms Inc.",
+    "Tesla Inc.",
+    "Netflix Inc.",
+    "Adobe Inc.",
+    "Intel Corporation",
+    "IBM Corporation",
+    "Oracle Corporation",
+    "Salesforce Inc.",
+    "Cisco Systems Inc.",
+    "NVIDIA Corporation",
+    "AMD Inc.",
+    "Qualcomm Inc.",
+    "Samsung Electronics",
+    "Sony Corporation",
+    "Dell Technologies",
+    "HP Inc."
+];

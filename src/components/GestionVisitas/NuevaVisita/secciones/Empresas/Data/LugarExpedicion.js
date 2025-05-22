@@ -1,0 +1,22 @@
+export const lugaresExpedicion = [
+  "Registraduría Nacional del Estado Civil - Bogotá",
+  "Registraduría Auxiliar de Medellín",
+  "Registraduría Especial de Cali",
+  "Registraduría de Barranquilla",
+  "Registraduría de Cartagena",
+  "Registraduría de Bucaramanga",
+  "Registraduría de Pereira",
+  "Registraduría de Santa Marta",
+  "Registraduría de Ibagué",
+  "Registraduría de Cúcuta",
+  "Registraduría de Villavicencio",
+  "Registraduría de Manizales",
+  "Registraduría de Pasto",
+  "Registraduría de Neiva",
+  "Registraduría de Armenia",
+  "Registraduría de Valledupar",
+  "Registraduría de Montería",
+  "Registraduría de Sincelejo",
+  "Registraduría de Popayán",
+  "Registraduría de Tunja"
+];

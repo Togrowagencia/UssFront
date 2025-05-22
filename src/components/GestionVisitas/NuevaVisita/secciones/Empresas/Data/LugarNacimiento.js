@@ -1,0 +1,22 @@
+export const lugaresNacimiento = [
+  "Bogotá",
+  "Medellín",
+  "Cali",
+  "Barranquilla",
+  "Cartagena",
+  "Bucaramanga",
+  "Pereira",
+  "Santa Marta",
+  "Ibagué",
+  "Cúcuta",
+  "Villavicencio",
+  "Manizales",
+  "Pasto",
+  "Neiva",
+  "Armenia",
+  "Valledupar",
+  "Montería",
+  "Sincelejo",
+  "Popayán",
+  "Tunja"
+];
