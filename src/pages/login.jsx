@@ -9,7 +9,7 @@ const Login = () => {
       <div className="w-[98%] h-[98%] flex">
         <div className="w-[50%] h-full m-[1%]">
           <img
-            src="public/images/Login.png"
+            src="/images/Login.png"
             className="w-full h-[95.4vh] object-[right]"
             alt="Panel izquierdo"
           />

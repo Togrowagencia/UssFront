@@ -14,7 +14,7 @@ const NuevaVisita = () => {
       <Sidebar />
       <div className="-ml-[4%] w-[84%] h-full z-[2] rounded-l-[54px] bg-white px-[3.5%] transition-[width] duration-500 ease-linear sombra">
         <Header onSearch={onSearch} />
-        <div className="w-full h-[87%] my-[1.9%]">
+        <div className="w-full h-[80%] my-[3%]">
           <FormularioNuevaVisita />
         </div>
       </div>

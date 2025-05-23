@@ -6,6 +6,8 @@ import { estadosCiviles } from "./Data/EstadoCivil";
 import { lugaresExpedicion } from "./Data/LugarExpedicion";
 import { lugaresNacimiento } from "./Data/LugarNacimiento";
 import { tipoVehiculo } from "./Data/TipoVehiculo";
+import { tipoSangre } from "./Data/TipoSangre";
+import { rh } from "./Data/RH";
 /* Components */
 import Select from "@/components/inputs/Selects";
 import Input from "@/components/inputs/Inputs";
@@ -44,10 +46,11 @@ const Empresas = () => {
   const [tipoVehiculoSeleccionado, setTipoVehiculoSeleccionado] = useState("");
   const [fondoPensiones, setFondoPensiones] = useState("");
   const [eps, setEps] = useState("");
-  const [tipoSangre, setTipoSangre] = useState("");
+  const [tipoSangreSeleccionado, setTipoSangreSeleccionado] = useState("");
+  const [rhSeleccionado, setRhSeleccionado] = useState("");
 
   return (
-    <div className="flex flex-wrap w-[100%] gap-[2.6%] overflow-y-auto max-h-[100vh] h-[68%]">
+    <div className="flex flex-wrap w-[100%] gap-[2.6%] min-h-[84%]">
       {/* Primera linea */}
       <Select
         titulo="Empresas"
@@ -299,11 +302,21 @@ const Empresas = () => {
         className="w-[22.7%]"
         required
       />
-      <Input
+      <Select
         titulo="Tipo de Sangre"
-        placeholder="Escribir tipo de sangre"
-        valor={tipoSangre}
-        onChange={setTipoSangre}
+        placeholder="Selecciona un tipo de sangre"
+        opciones={tipoSangre}
+        valorSeleccionado={tipoSangreSeleccionado}
+        onChange={setTipoSangreSeleccionado}
+        className="w-[22.7%]"
+        required
+      />
+      <Select
+        titulo="RH"
+        placeholder="Selecciona un RH"
+        opciones={rh}
+        valorSeleccionado={rhSeleccionado}
+        onChange={setRhSeleccionado}
         className="w-[22.7%]"
         required
       />
